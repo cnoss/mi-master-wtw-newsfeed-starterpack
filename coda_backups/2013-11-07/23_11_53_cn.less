@@ -1,0 +1,48 @@
+@import "../lib/bootstrap/less/mixins.less";
+
+@basefontsize: 20px;
+@dunkel: #403D39;
+
+
+.dunkel{
+	color: @dunkel;
+	.opacity(0.7);	
+	
+}
+
+#cn {
+
+
+	h1{
+		font-size: @basefontsize*4;
+		font-weight: 700;
+		line-height: 100%;
+		.dunkel;
+	}
+	
+	// Farben
+	.pink{ color: #dd1166; }
+	
+	// Größen
+	.gross{ 	font-size: @basefontsize*3; }
+	.saugross{	font-size: @basefontsize*4; }
+	
+	// Schnitte
+	.fett{		font-weight: 700; .dunkel; }
+	.uc{		text-transform: uppercase; }
+
+	// Hintergründe
+	.bg{
+		background-color: #F6F2EC;
+	}
+	
+	// specials
+	sup{
+		font-weight: normal;
+		font-size: @basefontsize;
+	}
+	
+	rot90{
+		.rotate(90);
+	}
+}
