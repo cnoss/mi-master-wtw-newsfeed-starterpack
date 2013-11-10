@@ -1,0 +1,98 @@
+@import "../lib/bootstrap/less/variables.less";
+@import "../lib/bootstrap/less/mixins.less";
+//@import "../lib/bootstrap/less/normalize.less";
+//@import "../lib/bootstrap/less/print.less";
+//@import "../lib/bootstrap/less/scaffolding.less";
+//@import "../lib/bootstrap/less/type.less";
+//@import "../lib/bootstrap/less/code.less";
+//@import "../lib/bootstrap/less/grid.less";
+@import "../lib/bootstrap/less/tables.less";
+
+@basefontsize: 20px;
+@dunkel: #403D39;
+
+
+.dunkel{
+	color: @dunkel;
+	.opacity(0.7);	
+	
+}
+
+#cn {
+
+	p{
+		font-size: @basefontsize*2;	
+	}
+	
+	h1{
+		font-size: @basefontsize*4;
+		font-weight: 700;
+		line-height: 100%;
+		.dunkel;
+	}
+	
+	h2{
+		font-size: @basefontsize*3;
+		font-weight: 700;
+		line-height: 100%;
+		.dunkel;
+	}
+	
+	// Farben
+	.pink{ 	color: #dd1166; }
+	.gruen{ color: #77cc00; }
+	.blau{	color: #77aabb; }
+	
+	// Größen
+	small{ 	font-size: @basefontsize; }
+	.gross{ 	font-size: @basefontsize*3; }
+	.saugross{	font-size: @basefontsize*4; }
+	
+	// Schnitte
+	.fett{		font-weight: 700; .opacity(0.7) }
+	.medium{	font-weight: 500; .opacity(0.7) }
+	.uc{		text-transform: uppercase; }
+	
+	// Abstände
+	.lh1{		line-height: 100%; }
+	.top1{		margin-top: @basefontsize; }
+	
+	// Hintergründe
+	.bg-hell{ background-color: #F6F2EC; padding: @basefontsize*2; border-radius: 2px; }
+	
+	// Bilder
+	.img-rect{
+		width: 800px;
+		height: 450px;
+		overflow: hidden;
+		.box-shadow(10px 10px 30px rgba(0,0,0,.25));
+	}
+	
+	
+	// specials
+	sup{
+		display: inline-block;
+		font-weight: normal;
+		font-size: @basefontsize;
+	}
+	
+	.right{ 	text-align: right; }
+	.mittig{ 	text-align: center;}
+
+	
+	.rot90 {
+    	display: inline-block;
+		.rotate(90deg);
+	}
+	
+	.rot5 {
+    	display: inline-block;
+		.rotate(5deg);
+	}
+	
+	.table{
+		&.klein{
+			*{ font-size: @basefontsize*2; }
+		}
+	}
+}
