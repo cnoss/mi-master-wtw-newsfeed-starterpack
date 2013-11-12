@@ -1,7 +1,11 @@
 <!doctype html>
 
 <!--
-
+	- breaking off the course of studies
+	- standard study period
+	- finish the programme in standard study period
+	- drop off rate
+	
     Welcome to the light side of the source, young padawan.
 
     One step closer to learn something interesting you are...
@@ -206,12 +210,12 @@
     
     <!-- Titel
 	/////	/////	/////	/////	///// /////	/////	/////	/////	///// -->
-    <div id="start" class="step bg-hell br10 padding2 sektor1" data-scale="5" data-rotate-y="90">
+    <div id="start" class="step bg-hell br10 padding2 sektor1" data-scale="5">
      	<p class="pink">Curriculums at the University of Applied Sciences Cologne: </q>
      	<h1>Learnings from different approaches.</h1>
     </div>
     
-    <div class="step bg-hell sektor1" data-scale="5" data-y="4000" data-rotate-y="90">
+    <div class="step bg-hell sektor1" data-scale="5" data-y="4000">
         <p class="gross">things,</p>
         <p class=" mittig fett">that <span class="pink">never</span> to be done twice <sup class="rot90">;-)</sup></p>
     </div>
@@ -220,21 +224,31 @@
     <!-- Me
 	/////	/////	/////	/////	///// /////	/////	/////	/////	///// -->
     
-    <div id="me" class="step sektor1" data-scale="2" data-y="6000" data-rotate-y="90">
+    <div id="me" class="step sektor1" data-scale="2" data-y="6000">
         <p class="gross">Christian Noss</p>
-        <p class="pink">Managing Partner of  <span class="pink">Klickmeister GmbH Essen</span></p>
+        <p class="pink">Designer</p>
+        <p class="">Managing Partner of  <span class="pink">Klickmeister GmbH Essen</span></p>
     </div>
     
-    <div class="step sektor1" data-scale="2" data-y="6000" data-x="4000" data-rotate-y="90">
+    <div class="step sektor1" data-scale="2" data-y="6000" data-x="4000">
         <p class="gross">Christian Noss</p>
         <p class="pink">University of Applied Sciences Cologne</p>
         <p>Head of Bachelor Programme Computer Science and Media</p>
+        <ul class="bullets klein top1 grau">
+        	<li>Visual Communication Basics</li>
+        	<li>Web-based Systems, WWW-Technologies</li>
+        	<li>Introduction in Computer Science and Media</li>
+        </ul>
+        <p class="pink padding1 bg-gruen top1 bschatten klein rot5">Web fan!</p>
     </div>
     
-    <div class="step sektor1" data-scale="1" data-y="6000" data-x="4000" data-z="-2000" data-rotate-y="90">
-        <p class="gross mitte"><b>Kölner Dom</b> <sub>&</sub> <b>1.FC</b> <sub>&</sub> <b>Karneval</b></p>
+    <div class="step sektor1" data-scale="1" data-y="6000" data-x="4000" data-z="-2000">
+        <p class="gross mittig"><b>Kölner Dom</b> <sub>&</sub> <b>1.FC</b><br><sub>&</sub> <b>Karneval</b> <sub>&</sub> <b>Kölsch</b></p>
     </div>
-
+    
+    <div class="step sektor1" data-scale="0.1" data-rotate="90" data-y="6000" data-x="4500" data-z="-2200">
+        <p class="gross mittig"><img src="images/karneval.jpg" class="bschatten"></p>
+    </div>
     
     
     <!-- Topics
@@ -248,7 +262,7 @@
     </div>
     
     <div class="step" data-scale="5" data-x="-10000" data-rotate-y="90" data-y="2000">
-    	<p class="mittig gross medium">Latest Study Programme</p>
+    	<p class="mittig gross medium"><span class="pink">Latest</span> Study Programme</p>
     </div>
     
     <div class="step" data-scale="5" data-x="-10000" data-rotate-y="135" data-y="3000">
@@ -264,9 +278,13 @@
     </div>
 	
 	<div class="step" data-scale="1" data-x="-5000" data-y="-8000" data-rotate="180">
-        <p class="fett gross lh1">Campus Gummersbach <span class="pink">//</span> Faculty 10 <span class="pink">//</span> Engineering and Computer Science</p>
-        <p class="top1"><span class="pink">4</span> bachelor programmes // <span class="pink">2,5</span> master programmes</p>
-        <p class=" "><span class="pink">1300</span> students in computer science programmes</p>
+        <p class="fett gross lh1">Campus Gummersbach <span class="grau">//</span> Faculty 10 <span class="grau">//</span> Engineering and Computer Science</p>
+        <ul class="bullets top1">
+        	<li><span class="pink">4</span> bachelor programmes</li>
+        	<li><span class="pink">2,5</span> master programmes</li>
+        	<li><span class="pink">1300</span> students in computer science programmes</li>
+        	<li><span class="pink">28</span> full-time Professors</li>
+        </ul>
     </div>
     
     <div class="step" data-scale="1" data-x="-5000" data-y="-9000" data-rotate="0">
@@ -275,45 +293,46 @@
 
     </div>
     
-    <div class="step" data-scale="5" data-x="-5000" data-y="-9000" data-rotate="90">
-        <p class=" gross lh2">Four programmes // <span class="pink">one core</span></p>
+    <div class="step" data-scale="5" data-x="-5000" data-y="-12000" data-rotate="90">
+        <p class=" gross lh2 halbfett">Four programmes <span class="grau">//</span> <span class="pink">one core</span></p>
         <table class="table klein top2">
         	<tr>
         		<td>
         			<div class="bg-grau br10 padding1">
 	        			<p class="halbfett">Computer Science and Media</p>
-	        			<p class="top1 sauklein">Media Production, Visual Communication, Web-Technologies, HCI, Computer Graphics ...</p>
+	        			<p class="sauklein">Media Production, Visual Communication, Web-Technologies, HCI, Computer Graphics ...</p>
         			</div>
         		</td>
         		
         		<td>
-        			<div class="bg-grau br10 padding1">
+        			<div class="bg-grau br10 padding1 cell">
 	        			<p class="halbfett">Business Informatics</p>
-	        			<p class="top1 sauklein">...</p>
+	        			<p class="sauklein ">...</p>
         			</div>
         		</td>
         		
         		<td>
         			<div class="bg-grau br10 padding1">
 	        			<p class="halbfett">General Computer Science</p>
-	        			<p class="top1 sauklein">...</p>
+	        			<p class="sauklein">...</p>
         			</div>
         		</td>
         		
         		<td>
         			<div class="bg-grau br10 padding1">
 	        			<p class="halbfett">Technical Computer Science</p>
-	        			<p class="top1 sauklein">...</p>
+	        			<p class="sauklein">...</p>
         			</div>
         		</td>
 
         	<tr><td colspan="4">
         		<div class="bg-pink br10 op8 padding1">
         			<p class="halbfett">Core</p>
-        			<p class="sauklein top1">Mathematics, Programming Basics, Theoretical Informatics, Operating Systems, Distributed Systems, IT-Law, Business Administration, Ethics, Network Technology</p>
+        			<p class="sauklein">Mathematics, Programming Basics, Theoretical Informatics, Operating Systems, Distributed Systems, IT-Law, Business Administration, Ethics, Network Technology</p>
         		</div>
         	</td></tr>
         </table>
+        <p class="rot3 bg-hell padding1 br5 bschatten" style="margin-top: -150px; display: inline-block; position: relative; top:-30px; left: -40px">Why that<span class="pink">?</span></p>
         
     </div>
     
@@ -324,8 +343,15 @@
         <ul class="bullets normal top1">
         	<li>One core & Media Courses (50:50)</li>
         	<li>Focus on projects</li>
+        	<li>Standard Course 5CP</li>
         </ul>
         
+    </div>
+    
+     <div class="step" data-scale="0.1" data-x="-5900" data-y="-4600" data-rotate="90">
+     		<p>Drop-off rate <i>35%</i></p>
+     		<p>Standard period of study <i>10%</i></p>
+	 		<p><span class="pink rot50">:-(</span></p>
     </div>
     
 	<div class="step" data-scale="1" data-x="-6500" data-y="-4500" data-rotate="180">
@@ -351,7 +377,7 @@
         </ul>        
     </div>
     
-	<div id="mimaster" class="step" data-scale="3" data-x="-7000" data-y="-5500" data-rotate="270" data-rotate-y="90">
+	<div id="mimaster" class="step" data-scale="3" data-x="-9000" data-y="-5500" data-rotate="270" data-rotate-x="30">
         <p class="klein halbfett lh1 grau">Master Progamme</p>
         <p class="fett">Computer Science and Media <sup><span class="pink">50</span> students <span class="grau">//</span> <span class="pink">2</span> years</sup></p>
         <ul class="bullets normal top1">
@@ -360,7 +386,14 @@
         </ul>        
     </div>
     
-	<div class="step" data-scale="3" data-x="-7000" data-z="-1500" data-y="-7000" data-rotate="0" data-rotate-y="90">
+   <div class="step" data-scale="0.1" data-x="-9300" data-y="-7000" data-rotate="270" data-rotate-x="30">
+     		<p>Drop-off rate <i>5%</i></p>
+     		<p>Standard period of study <i>40%</i></p>
+	 		<p><span class="pink rot50">:-)</span></p>
+    </div>
+
+    
+	<div class="step" data-scale="3" data-x="-9000" data-z="-1500" data-y="-7000" data-rotate="0"  data-rotate-x="30">
         <p class="klein halbfett lh1 grau">MA Computer Science and Media</p>
         <p class="fett">Goals</span></p>
         <ul class="bullets top1 normal">
@@ -370,7 +403,7 @@
         </ul>
     </div>
     
-    <div class="step" data-scale="3" data-x="-7000" data-z="-3000" data-y="-5500" data-rotate="90" data-rotate-y="90">
+    <div class="step" data-scale="3" data-x="-9000" data-z="-3000" data-y="-3500" data-rotate="90"  data-rotate-x="30">
         <p class="klein halbfett lh1 grau">MA Computer Science and Media</p>
         <p class="fett">Occupational Fields</p>
 
@@ -389,6 +422,8 @@
     <div id="questions" class="step" data-scale="1" data-x="10000">
         <p class="klein halbfett lh1">Computer Science and Media</p>
         <p class="halbfett saugross pink">Fundamental Questions</p>
+         <p class="saugross klein">or <i>challanges</i></p>
+
 	</div>
 	
 	<div class="step" data-scale="5" data-x="10000" data-y="2000">
@@ -410,8 +445,8 @@
 	<div class="step" data-scale="5" data-x="15000" data-y="8000" data-rotate-x="-270">
         <p class="pink">Curriculum Strategy</p>
         <ul class="bullets top1">
-        <li class="gross lh1 fett ">Buzzwords <span class="grau">or</span> long-term Designations?</li>
-        <li class="gross lh1  ">Agility <span class="grau">or</span> Constancy?</li>
+        <li class="gross lh1 fett ">Buzzwords <span class="gruen">or</span> long-term Designations?</li>
+        <li class="gross lh1  ">Agility <span class="gruen">or</span> Constancy?</li>
         </ul>
 	</div>
 	
@@ -420,6 +455,9 @@
         <p class="halbfett saugross lh1 top1">How to <i>provide</i> the <span class="pink">software, devices, servers</span> and other stuff?</p>
 	</div>
 	
+	<div class="step" data-scale="1" data-x="12000" data-y="10000" data-rotate-y="45">
+        <p class="halbfett gross mittig grau">the <i>next</i> step<span class="pink">?</span></p>
+	</div>
 	
 	<!-- Web Science
 	/////	/////	/////	/////	///// /////	/////	/////	/////	///// -->
@@ -632,7 +670,7 @@
 				<td>Web Project Development</td>
 			</tr>
         	<tr class="bg-pink">
-        		<td><span class="glyphicon glyphicon-user"></span> Kristian</td>
+        		<td><span class="glyphicon glyphicon-user"></span> Advisory Board</td>
 				<td>Masterthesis + Kolloquium</td>
         	</tr>
 		</table>
@@ -748,7 +786,10 @@
 	<div class="step" data-scale="5" data-x="18000" data-y="26000" data-rotate="270">
         <p class="pink">What are the benefits?</p>
         <p class="halbfett saugross lh1 top1">Better <i>coordination</i> between single <i>courses</i>.</p>
-        <p class="top2 klein">Especially if they build upon one another.</p>
+	</div>
+	
+	<div class="step" data-scale="1" data-x="19000" data-y="22000" data-rotate="360">
+        <p class="halbfett gross lh1 top1">The concept <i>provides a structure</i> for more transparency and for more communication between the professors.</p>
 	</div>
 	
 	
@@ -757,6 +798,7 @@
 	
 	<div class="step" id="teaching-concepts" data-scale="5" data-x="30000" data-y="-30000">
         <p class="gross mittig fett grau">A few <span class="pink">Teaching Concepts</span></p>
+         <p class="klein mittig">we are using <span class="rot90 gruen">:-)</span></p>
 	</div>
 	
 	<div class="step" data-scale="5" data-x="30000" data-y="-28000" data-z="1000" data-rotate="15">
@@ -767,6 +809,7 @@
 	        <li class="gross lh1 halbfett">Exercise Course</li>
 	        <li class="gross lh1 halbfett">Tutorial</li>
         </ul>
+        
 	</div>
 	
 	<div class="step" data-scale="5" data-x="30000" data-y="-25000" data-z="2000" data-rotate="-15">

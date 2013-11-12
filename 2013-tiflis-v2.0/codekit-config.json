@@ -123,17 +123,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/lib\/jquery\/jquery-2.0.3.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/jquery\/jquery-2.0.3.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/lib\/jquery\/jquery-2.0.3.min-ck.js",
-      "fileType" : 64
-    },
     "\/lib\/bootstrap\/dist\/css\/bootstrap-theme.min.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1434,17 +1423,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/lib\/bootstrap\/js\/tests\/unit\/tab.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/bootstrap\/js\/tests\/unit\/tab.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/lib\/bootstrap\/js\/tests\/unit\/tab-ck.js",
-      "fileType" : 64
-    },
     "\/lib\/bootstrap\/less\/type.less" : {
       "ieCompatibility" : 1,
       "inputAbbreviatedPath" : "\/lib\/bootstrap\/less\/type.less",
@@ -1461,6 +1439,17 @@
       "outputStyle" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/lib\/bootstrap\/js\/tests\/unit\/tab.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/bootstrap\/js\/tests\/unit\/tab.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/lib\/bootstrap\/js\/tests\/unit\/tab-ck.js",
+      "fileType" : 64
     },
     "\/lib\/bootstrap\/js\/tests\/unit\/button.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1506,17 +1495,6 @@
       "outputStyle" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/images\/sven.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/sven.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/sven.jpg",
-      "initialSize" : 387554,
-      "fileType" : 4096
     },
     "\/lib\/bootstrap\/js\/collapse.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1586,15 +1564,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/lib\/bootstrap\/examples\/jumbotron-narrow\/jumbotron-narrow.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/bootstrap\/examples\/jumbotron-narrow\/jumbotron-narrow.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/lib\/bootstrap\/examples\/screenshots\/starter-template.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1605,6 +1574,15 @@
       "outputAbbreviatedPath" : "\/lib\/bootstrap\/examples\/screenshots\/starter-template.jpg",
       "initialSize" : 22620,
       "fileType" : 4096
+    },
+    "\/lib\/bootstrap\/examples\/jumbotron-narrow\/jumbotron-narrow.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/bootstrap\/examples\/jumbotron-narrow\/jumbotron-narrow.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/lib\/bootstrap\/examples\/jumbotron\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1739,10 +1717,10 @@
       "outputAbbreviatedPath" : "\/lib\/bootstrap\/js\/tab-ck.js",
       "fileType" : 64
     },
-    "\/lib\/bootstrap\/less\/glyphicons.less" : {
+    "\/lib\/bootstrap\/less\/carousel.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/lib\/bootstrap\/less\/glyphicons.less",
-      "outputAbbreviatedPath" : "\/lib\/bootstrap\/css\/glyphicons.css",
+      "inputAbbreviatedPath" : "\/lib\/bootstrap\/less\/carousel.less",
+      "outputAbbreviatedPath" : "\/lib\/bootstrap\/css\/carousel.css",
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -1756,10 +1734,10 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/lib\/bootstrap\/less\/carousel.less" : {
+    "\/lib\/bootstrap\/less\/glyphicons.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/lib\/bootstrap\/less\/carousel.less",
-      "outputAbbreviatedPath" : "\/lib\/bootstrap\/css\/carousel.css",
+      "inputAbbreviatedPath" : "\/lib\/bootstrap\/less\/glyphicons.less",
+      "outputAbbreviatedPath" : "\/lib\/bootstrap\/css\/glyphicons.css",
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -1939,15 +1917,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/lib\/bootstrap\/_includes\/nav-javascript.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/bootstrap\/_includes\/nav-javascript.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/lib\/bootstrap\/js\/tests\/vendor\/qunit.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1958,6 +1927,15 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/lib\/bootstrap\/js\/tests\/vendor\/qunit-ck.js",
       "fileType" : 64
+    },
+    "\/lib\/bootstrap\/_includes\/nav-javascript.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/bootstrap\/_includes\/nav-javascript.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     }
   },
   "manualImportLinks" : [
