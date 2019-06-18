@@ -72,8 +72,8 @@
           </div>
         </div>
       </div>
-      <div class="grid-container fluid frameless js-eventblock">
-        <div class="grid-x grid-margin-x grid-padding-y ">
+      <div class="grid-container fluid frameless js-eventblock----react">
+        <div class="grid-x grid-margin-x grid-padding-y js-eventblock-vanilla">
           <div class="cell medium-6 large-4 xxxlarge-3">
             <a href="/events/2019-02-13-pp-abschluss/">
               <div class="m-mi-pulse-teaser is-text-only">
@@ -167,8 +167,170 @@
 
 <script type="text/babel">
 
-const newsUrls = ['https://th-koeln.github.io/mi-master-wtw/pulse.json',
-  '/events/index.json'];
+/* Vanilla Variante
+-----------------------------------------------------------------------------*/
+
+function createNews() {
+
+  const newsUrls = ['https://th-koeln.github.io/mi-master-wtw/pulse.json', '/events/index.json'];
+  const target = document.querySelector(".js-eventblock-vanilla");
+  let promises = [];
+  let data = [];
+
+  function getResource(url) { 
+    return new Promise((resolve, reject) => {
+      fetch(url)
+        .then(response => {
+          return response.json();
+        })
+        .then(
+          json => {
+            json.forEach(function(item){
+              data.push(item);
+            });
+          }
+        ).then(()=>resolve(true));  
+    });
+  }
+
+  function sortItems(){
+    data.sort(function(a, b) {
+      let aTime = new Date(a.datum).getTime();
+      let bTime = new Date(b.datum).getTime();
+      return bTime - aTime;
+    });
+  }
+
+  function displayItems(){
+    target.innerHTML = "";
+    data.forEach(function(item){
+      let html = '<div class="cell medium-6 large-4 xxxlarge-3"><a href="'+item.url+'"><div class="m-mi-pulse-teaser has-image" style="background-image: url('+item.bild+')"><div class="m-mi-pulse-teaser--content"><h2 class="title">'+item.title+'</h2></div><p class="m-mi-pulse-teaser--footer">'+item.termin+'</p></div></a></div>';
+      target.innerHTML += html;
+    });
+    
+  }
+
+  newsUrls.forEach(function(url) {
+    promises.push(getResource(url));
+  });
+  
+  Promise.all(promises)
+    .then(() => sortItems())
+    .then(() => displayItems());
+}
+
+
+
+
+
+/* React Variante
+-----------------------------------------------------------------------------*/
+
+Date.prototype.getUnixTime = function () { return this.getTime() / 1000 | 0 };
+// Based on https://www.youtube.com/watch?v=3UtvN8EBGpg
+class NewsFeed extends React.Component {
+  constructor() { 
+    super();
+    this.state = {
+      'items': [],
+      'sortedItems': []
+    }
+    this.promises = [];
+    this.ressources = [
+      'https://th-koeln.github.io/mi-master-wtw/pulse.json',
+      '/events/index.json'
+    ]
+  }
+  componentDidMount() { 
+    let _this = this;
+    this.getRessources();
+  }
+
+  sortItems(){
+    let items = this.state.items;
+    items.sort(function (a, b) {
+      var aTime = new Date(a.datum).getUnixTime();
+      var bTime = new Date(b.datum).getUnixTime();
+      return bTime - aTime;
+    });
+    this.setState({ 'sortedItems': items });
+    return items;
+  }
+
+  getItems(ressource) { 
+    let _this = this;
+    return new Promise((resolve, reject) => {
+      fetch(ressource)
+        .then(results => results.json().then(results => { _this.addItemsToState(results);resolve({results}); } )
+      );   
+    });
+  }
+
+  addItemsToState(items){
+    let allItems = this.state.items.concat(items);
+    this.setState({ 'items': allItems });
+    return true;
+  }
+
+  getRessources() {
+  let _this = this;
+  this.ressources.forEach(function(ressource) {
+    _this.promises.push(
+    _this.getItems(ressource)
+  );
+  });
+  Promise.all(this.promises).then(() => {
+    this.sortItems();
+  }
+
+  );
+  }
+
+  render() { 
+    return (
+      <div class="grid-x grid-margin-x grid-padding-y">
+        {this.state.sortedItems.map(function (item) { 
+          const itemStyle = {
+            "background-image": "url("+item.bild+")",
+          };
+          return (
+            <div class="cell medium-6 large-4 xxxlarge-3">
+              <a href={item.url}>
+                <div class="m-mi-pulse-teaser has-image" style={itemStyle}>
+                  <div class="m-mi-pulse-teaser--content">
+                    <h2 class="title">{item.title}</h2>
+                  </div>
+                  <p class="m-mi-pulse-teaser--footer">
+                    {item.termin}
+                  </p>
+                </div>
+                </a>
+            </div>
+            );
+        })}
+      </div>
+    );
+  }
+ }
+
+
+ /* Main
+-----------------------------------------------------------------------------*/
+
+document.onreadystatechange = function () {
+  if (document.readyState == "complete") {
+    if (document.querySelector(".js-eventblock-react")) {
+      ReactDOM.render(
+        <NewsFeed />,
+          document.querySelector(".js-eventblock-react")
+      );
+    }
+    if (document.querySelector(".js-eventblock-vanilla")) {
+      createNews();
+    }
+  }
+}
+
 
 </script>
 
